@@ -12,9 +12,9 @@
 #git clone https://github.com/kenzok8/small package/small
 #git clone https://github.com/jerrykuku/lua-maxminddb package/lua-maxminddb
 # Add luci-app-ssr-plus
-pushd package
-git clone --depth=1 https://github.com/fw876/helloworld
-popd
+#pushd package
+#git clone --depth=1 https://github.com/fw876/helloworld
+#popd
 
 mkdir package/community
 pushd package/community
