@@ -8,8 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build x86-64-lineol-21.02
-
+name: Build x86-64-lineol-master
 on:
   repository_dispatch:
   release:
@@ -38,7 +37,7 @@ jobs:
         sudo -E apt-get -qq clean
        
     - name: Clone source code
-      run: git clone --depth 1 https://github.com/Lienol/openwrt -b 19.07 openwrt
+      run: git clone --depth 1 https://github.com/Lienol/openwrt -b master openwrt
       
     - name: Update feed
       run: cd openwrt && ./scripts/feeds update -a
@@ -48,7 +47,7 @@ jobs:
 
     - name: Load custom configuration
       env:
-        CONFIG_FILE: x86-64-lineol.config
+        CONFIG_FILE: x86-64-lineol-master.config
         DIY_SH: diy-x86-64-li.sh
       run: |
         chmod +x $DIY_SH
