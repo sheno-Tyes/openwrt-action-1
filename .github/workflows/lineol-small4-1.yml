@@ -74,5 +74,5 @@ jobs:
     - name : Upload targets
       uses: actions/upload-artifact@master
       with:
-        name: OpenWrt-firmware-x86-64
+        name: OpenWrt firmware
         path: openwrt/bin/targets
