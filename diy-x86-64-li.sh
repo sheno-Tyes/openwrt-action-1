@@ -15,6 +15,9 @@
 #pushd package
 #git clone --depth=1 https://github.com/fw876/helloworld
 #popd
+echo "src-git helloworld https://github.com/fw876/helloworld.git" >> feeds.conf.default
+./scripts/feeds update helloworld
+./scripts/feeds install -a -f -p helloworld
 
 mkdir package/community
 pushd package/community
