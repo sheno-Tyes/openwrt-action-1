@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build x86-64-lineol-s
+name: Build x86-64-lineol-s 19.07
 
 on:
   repository_dispatch:
