@@ -48,7 +48,7 @@ jobs:
 
     - name: Load custom configuration
       env:
-        CONFIG_FILE: x86-64-lineol-1.config
+        CONFIG_FILE: x86-64-lineol-19.07.config
         DIY_SH: diy-x86-64-li-1.sh
       run: |
         chmod +x $DIY_SH
