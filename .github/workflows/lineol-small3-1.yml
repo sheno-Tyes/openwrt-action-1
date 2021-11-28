@@ -48,15 +48,13 @@ jobs:
 
     - name: Load custom configuration
       env:
-        CONFIG_FILE: x86-64-lineol.config
-        DIY_SH: diy-x86-64-li.sh
+        CONFIG_FILE: x86-64-lineol-1.config
+        DIY_SH: diy-x86-64-li-1.sh
       run: |
-        rm openwrt/.config
-        [ -e files ] && mv files openwrt/files
-        [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         chmod +x $DIY_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_SH
+        cp $GITHUB_WORKSPACE/$CONFIG_FILE .config
         
     - name: Download package
       id: package
