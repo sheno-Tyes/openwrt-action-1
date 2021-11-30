@@ -15,9 +15,7 @@
 #pushd package
 #git clone --depth=1 https://github.com/fw876/helloworld
 #popd
-echo "src-git helloworld https://github.com/fw876/helloworld.git" >> feeds.conf.default
-./scripts/feeds update helloworld
-./scripts/feeds install -a -f -p helloworld
+rm -rf ./feeds/luci/applications/luci-app-dockerman
 
 mkdir package/community
 pushd package/community
@@ -31,7 +29,9 @@ git clone --depth=1 https://github.com/jerrykuku/luci-app-jd-dailybonus
 # Add luci-app-vssr <M>
 git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb.git
 git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr
-
+#add docker
+git clone https://github.com/lisaac/luci-lib-docker
+git clone https://github.com/lisaac/luci-app-dockerman
 
 
 popd
