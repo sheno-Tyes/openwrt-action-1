@@ -18,14 +18,16 @@ on:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
-  watch:
-    types: started
+  schedule:
+    - cron: 0 6 * * *
+  #watch:
+   # types: started
 env:
   REPO_URL: https://github.com/Lienol/openwrt
   REPO_BRANCH: main
-  CONFIG_FILE: x86-64-lineol-master.config
-  DIY_P1_SH: diy-dockerman-1.sh
-  DIY_P2_SH: diy-x86-64-li.sh
+  CONFIG_FILE: ipk.config
+  DIY_P1_SH: diy-ipk1.sh
+  DIY_P2_SH: diy-ipk2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_PACKAGE: true
   UPLOAD_COWTRANSFER: false
