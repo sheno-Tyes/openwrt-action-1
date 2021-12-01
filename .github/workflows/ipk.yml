@@ -118,7 +118,7 @@ jobs:
       id: organize
       if: env.UPLOAD_PACKAGE == 'true' && !cancelled()
       run: |
-        cd openwrt/bin/packages/*/*
+        cd openwrt/bin/packages/
         echo "PACKAGE=$PWD" >> $GITHUB_ENV
         echo "::set-output name=status::success"
     - name: Upload package directory
