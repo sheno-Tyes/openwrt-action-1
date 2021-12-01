@@ -24,6 +24,11 @@ svn co https://github.com/immortalwrt/packages/trunk/net/redsocks2
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall
 
 git clone --depth=1 https://github.com/jerrykuku/luci-app-jd-dailybonus
+# Add luci-app-bypass
+git clone --depth=1 https://github.com/kiddin9/openwrt-bypass
+
+# Add OpenClash
+git clone --depth=1 -b master https://github.com/vernesong/OpenClash
 
 # Add luci-app-vssr <M>
 git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb.git
