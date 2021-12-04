@@ -27,6 +27,9 @@ pushd package/community
 # git clone --depth=1 https://github.com/Lienol/openwrt-package
 # Add luci-app-passwall
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall
+
+git clone --depth=1 https://github.com/kiddin9/openwrt-bypass
+
 # add ddns.to
 svn co https://github.com/linkease/nas-packages/trunk/luci/luci-app-ddnsto
 svn co https://github.com/linkease/nas-packages/trunk/luci/luci-app-linkease
@@ -44,11 +47,11 @@ svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-filebrowser ../l
 # ADD luci-app-syncthing
 svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-syncthing ../luci-app-syncthing
 # add docker
-#git clone --depth=1 https://github.com/lisaac/luci-app-dockerman
+git clone --depth=1 https://github.com/lisaac/luci-app-dockerman
 
 # Add luci-app-vssr <M>
-#git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb.git
-#git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr
+git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb.git
+git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr
 # add luci-app-godproxy
 git clone https://github.com/project-lede/luci-app-godproxy
 # add luci-app-serverchan
