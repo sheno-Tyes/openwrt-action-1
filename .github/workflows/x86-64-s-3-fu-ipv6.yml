@@ -44,7 +44,6 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@main
-      with:
     - name: Initialization environment
       env:
         DEBIAN_FRONTEND: noninteractive
